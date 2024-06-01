@@ -1,0 +1,19 @@
+hostname r1
+!
+no ip domain lookup
+ip domain name lab.com
+!         
+username admin privilege 15 password 0 cisco
+!
+interface FastEthernet0/0
+ description mgmt interface
+ ip address 172.16.10.11 255.255.255.0
+ speed 100
+ full-duplex
+!
+line vty 0 4
+ logging synchronous
+ login local
+ transport input telnet ssh
+!         
+end

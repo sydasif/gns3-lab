@@ -1,0 +1,22 @@
+hostname core-sw
+!
+no ip domain lookup
+ip domain name lab.com
+!         
+username admin privilege 15 password 0 cisco
+!
+interface FastEthernet0/0
+ ip address 172.16.10.12 255.255.255.0
+ speed 100
+ full-duplex
+!
+interface Vlan1
+ no ip address
+!
+line vty 0 4
+ logging synchronous
+ login local
+ transport input telnet ssh
+!
+!
+end

@@ -1,0 +1,22 @@
+hostname access1
+!
+username admin privilege 15 password 0 cisco
+!
+no ip domain-lookup
+ip domain-name lab.com
+!
+interface Ethernet0/0
+ switchport mode access
+!
+interface Ethernet0/1
+!
+interface Vlan1
+ description mgmt vlan
+ ip address 172.16.10.13 255.255.255.0
+!
+line vty 0 4
+ logging synchronous
+ login local
+ transport input telnet ssh
+!
+end
