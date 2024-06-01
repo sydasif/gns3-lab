@@ -232,3 +232,5 @@ As you continue your network exploration, consider the following next steps:
 ## Conclusion
 
 In conclusion, you've successfully created a virtual network lab that serves as an invaluable resource for testing Python code on networking devices. This hands-on environment, comprising GNS3, Ubuntu Server, and VSCode, empowers you to refine your networking and coding skills in a dynamic and controlled setting.
+
+[Cisco IOS Lab Images](https://drive.google.com/drive/folders/1m85cy4y8At0yrKL-6_2bNDwtf-u5bTDU?usp=drive_link)
